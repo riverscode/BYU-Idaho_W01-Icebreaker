@@ -41,6 +41,10 @@ a:hover{
   color: #000000;
 }
 
+.lessons a:hover{
+  color: #7270e2;
+}
+
 .banner{
   padding: 0px 30px;
   display: flex;
