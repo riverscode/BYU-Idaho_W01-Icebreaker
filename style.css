@@ -46,6 +46,10 @@ a:hover{
   color: #7270e2;
 }
 
+.lessons-list{
+  margin-top: 20px;
+}
+
 .banner{
   padding: 0px 30px;
   display: flex;
