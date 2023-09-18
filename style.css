@@ -50,40 +50,4 @@ a:hover{
   margin-top: 20px;
 }
 
-.banner{
-  padding: 0px 30px;
-  display: flex;
-  flex-direction: row;
-  max-width: 1200px;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  row-gap: 30px;
-}
 
-.information{
-  max-width: 500px;
-}
-.title{
-  font-size: 40px;
-
-}
-
-.description{
-  margin-top: 12px;
-  font-size: 18px;
-}
-
-.technologies{
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  background-color: #000000;
-  padding: 20px 0px;
-  margin: -5px auto;
-}
-
-.coming-soon{
-  text-align: center;
-  margin-top: 50px;
-}
