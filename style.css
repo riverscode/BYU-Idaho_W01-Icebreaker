@@ -31,11 +31,12 @@ a:hover{
 
 .lessons{
   max-width: 600px;
-  margin: 30px auto;
+  margin: 70px auto;
 }
 
 .lessons li{
   list-style: none;
+  margin-top: 10px;
 }
 
 .lessons a{
