@@ -53,7 +53,7 @@ nav a:hover {
   color: #d9c2a3;
 }
 
-.msg{
+.msg {
   background-color:rgba(20,30,13, .7);
   color: #fcfbfb;
   line-height: 1.5em;
@@ -146,4 +146,8 @@ footer .social img   {
 
 .rivers-card, .camping-card, .rapids-card   {
   margin: 200px 0;
+}
+
+.mountains {
+  margin: 100px 0px;
 }
