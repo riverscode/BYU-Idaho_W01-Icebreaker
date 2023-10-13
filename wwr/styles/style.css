@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&family=Autour+One&family=Caveat&family=Young+Serif&display=swap');
 
 #content {
   max-width: 1600px;
@@ -5,7 +6,9 @@
 }
 
 nav a{
+  color: #fcfbfb;
   text-align: center;
+  padding: 35px;
 }
 
 #hero-msg h1, #hero-msg h4{
@@ -27,7 +30,16 @@ main section{
 
 body {
   background-color: #fcfbfb;
+  font-family: 'Roboto', 'Young Serif', sans-serif;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
 }
+
+h2 {
+  margin: 0;
+}
+
 header {
   background-color:rgba(20,30,13, .7);
 }
@@ -35,9 +47,7 @@ nav a:hover {
   background-color: black;
 }
 
-.book, .join{
-  background-color: #d9c2a3;
-}
+
 .book:hover, .join:hover{
   background-color: black;
   color: #d9c2a3;
@@ -46,9 +56,18 @@ nav a:hover {
 .msg{
   background-color:rgba(20,30,13, .7);
   color: #fcfbfb;
+  line-height: 1.5em;
+  padding: 35px;
+}
+
+.msg p{
+  font-size: .8em;
+  padding-bottom: 15px;
 }
 footer{
   background-color:rgba(20,30,13, .7);
+  padding: 25px 50px;
+  margin-top: 200px;
 }
 
 
@@ -73,9 +92,20 @@ nav a {
 
 
 .book, .join{
-  text-align: center;
-  color: black;
-  text-decoration: none;
+  background-color: #d9c2a3;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.card-img {
+  border: 10px solid #d9c2a3;
+}
+main section img {
+  box-sizing: border-box;
 }
 
 footer a{
@@ -93,4 +123,27 @@ footer p {
 footer p a:hover {
   text-decoration: underline;
   color: #d9c2a3;
+}
+
+
+.home-title {
+  font-family: 'Autour One', 'Caveat', sans-serif;
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+#logo_link {
+  padding-top: 5px;
+}
+
+.icon{
+  padding-top: 10px;
+}
+
+footer .social img   {
+  padding-top: 15px;
+}
+
+.rivers-card, .camping-card, .rapids-card   {
+  margin: 200px 0;
 }
