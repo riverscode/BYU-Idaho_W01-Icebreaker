@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&family=Autour+One&family=Caveat&family=Young+Serif&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.dark_button {
+  background-color: #7270e2;
+  color: #fcfbfb;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  border : 1.5px solid #7270e2;
+}
+
+.dark_button:hover {
+  background-color: #fcfbfb;
+  color: #7270e2;
+}
+
+.light_button {
+  background-color: #fcfbfb;
+  color: #00B28F;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  border : 1.5px solid #00B28F;
+}
+
+.light_button:hover {
+  background-color: #00B28F;
+  color: #fcfbfb;
+}
+
+
+#content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+#logo_link img {
+  height: 30px;
+}
+
+header nav {
+  display: flex;
+  gap: 30px;
+}
+
+header nav a:hover {
+  color: #7270e2;
+}
+
+#hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 100px;
+  align-items: center;
+}
+
+#hero-msg {
+  padding: 0px 30px;
+  max-width: 500px;
+}
+
+#hero-msg h1 {
+  font-size: 42px;
+  font-weight: 900;
+}
+
+#hero-msg h4 {
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 18px;
+}
+
+#hero-msg .button-box{
+  display: flex;
+  gap: 16px;
+  font-size: 16px;
+  margin-top: 32px;
+}
+
+#hero-box img {
+  width: 100%;
+}
+
+section {
+  padding-top: 56px;
+}
+
+section .title {
+  font-size: 32px;
+  text-align: center;
+  font-weight: 900;
+}
+
+.rivers{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 56px;
+}
+
+.rivers_item img{
+  width: 100%;
+}
+
+.rivers_item h3{
+  font-size: 24px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.rivers_item p{
+  height: 85px;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.rivers_item .button-box {
+  margin-top: 48px;
+  text-align: center;
+}
