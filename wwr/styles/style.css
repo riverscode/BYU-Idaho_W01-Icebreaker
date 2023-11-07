@@ -75,9 +75,6 @@ nav {
   display: flex;
   justify-content: space-around;
 }
-nav a:hover {
-  background-color: black;
-}
 
 
 .book:hover, .join:hover{
@@ -269,4 +266,3 @@ footer .social img   {
       margin-top: 25px;
   }
 }
-  
