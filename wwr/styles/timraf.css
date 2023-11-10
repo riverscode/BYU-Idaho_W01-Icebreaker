@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -31,7 +30,7 @@ a {
 .dark_button {
   background-color: #7270e2;
   color: #fcfbfb;
-  padding: 10px 20px;
+  padding: 8px 20px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
@@ -47,7 +46,7 @@ a {
 .light_button {
   background-color: #fcfbfb;
   color: #00B28F;
-  padding: 10px 20px;
+  padding: 8px 20px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
@@ -102,7 +101,7 @@ nav a:hover {
 #hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 100px;
+  margin-top: 48px;
   align-items: center;
 }
 
@@ -133,29 +132,43 @@ nav a:hover {
 
 /* #### MAIN #### */
 section {
-  margin-top: 96px;
+  margin-top: 200px;
 }
 
 section .title {
+  font-family: 'Autour One', 'Caveat', sans-serif;
   font-size: 32px;
   text-align: center;
   font-weight: 900;
 }
+
+
 
 section .title_left {
   font-size: 32px;
   font-weight: 900;
 }
 
-.rivers{
+.rivers {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-top: 56px;
 }
+.rivers_item{
+  display: flex;
+  flex-direction: column;
+  border: #000  1px solid;
+  border-radius: 10px;
+  overflow: hidden;
+}
 
 .rivers_item img{
   width: 100%;
+}
+
+.rivers_text {
+  padding: 16px 24px;
 }
 
 .rivers_item h3{
@@ -165,8 +178,7 @@ section .title_left {
 }
 
 .rivers_item p{
-
-  margin-top: 8px;
+  margin-top: 12px;
 }
 
 .rivers_item .button-box {
@@ -178,6 +190,10 @@ section .title_left {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+}
+
+.blog .text_left {
+  text-align: left;
 }
 
 .blog_left  h3{
@@ -192,7 +208,6 @@ section .title_left {
   width: 80%;
 }
 
-
 .blog_items {
   display: flex;
   flex-direction: column;
@@ -203,6 +218,9 @@ section .title_left {
 .blog_item {
   display: flex;
   gap: 24px;
+  border: #000  1px solid;
+  border-radius: 10px;
+  padding: 16px 24px;
 }
 
 .blog_item img{
@@ -210,15 +228,19 @@ section .title_left {
   border-radius: 10px;
 }
 
+.blog_right{
+  border: #000 1px solid;
+  border-radius: 10px;
+  padding: 16px 24px;
+}
+
 .blog_right img{
   width: 100%;
-  height: 250px;;
+  height: 250px;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .blog_right h4 {
-  font-size: 24px;
   margin-top: 8px;
 }
 
@@ -245,7 +267,7 @@ section .title_left {
   align-items: center;
 }
 .question_item h4{
-  font-size: 20px;
+  font-size: 26px;
 }
 
 .question_item svg{
@@ -253,20 +275,25 @@ section .title_left {
 }
 
 .question_item p{
-  font-size: 16px;
   margin-top: 18px;
 }
 
+.section_trips .title{
+  text-align: left;
+}
 .trips{
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 42px;
   padding: 30px 0px;
 }
 
 .trip_item {
   display: flex;
   gap: 24px;
+  border: #000  1px solid;
+  border-radius: 10px;
+  padding: 16px 24px;
 }
 
 .trip_item img{
@@ -279,15 +306,17 @@ section .title_left {
 }
 
 .trip_item .dates{
-  margin-top: 12px;
+  margin-top: 32px;
   display: flex;
   gap: 8px;
   align-items: center;
 }
 
-.trip_item svg{
-  width: 28px;
+.available_dates {
+  margin-top: 18px;
 }
+
+
 
 .trip_item p{
   font-size: 16px;
@@ -296,6 +325,7 @@ section .title_left {
 
 .trip_item .description{
   display: flex;
+  flex-direction: row;
   width: 100%;
   justify-content: space-between;
 }
@@ -340,9 +370,20 @@ footer p a:hover {
 
 /* #### MEDIA QUERIES #### */
 @media screen and (max-width: 900px) {
+  * {
+    padding: 0px 8px;
+  }
+
+  section{
+    margin-top: 96px;
+  }
+
   #hero, .home-grid {
       display: block;
       height: auto;
+  }
+  #hero-box {
+    margin-top: 18px;
   }
   nav, footer {
       flex-direction: column;
@@ -351,18 +392,16 @@ footer p a:hover {
       display: block;
       padding: 15px;
   }
-  #hero {
-      margin-top: 0;
-  }
+
   #hero-msg {
       margin-top: 0;
   }
   #hero-msg h4 {
       display: none;
   }
+
   .home-title {
       font-size: 25px;
-      color: #6f7364;
       text-align: center;
   }
 
@@ -379,9 +418,13 @@ footer p a:hover {
     margin-top: 56px;
   }
 
-  .blog{
+  .blog {
     display: flex;
     flex-direction: column;
+  }
+
+  .blog .text_left {
+    text-align: center;
   }
 
   .blog .blog_left{
@@ -392,6 +435,16 @@ footer p a:hover {
     width: 100%;
   }
 
+  .blog_item img{
+    display: none;
+  }
+
+  .trip_item .description{
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
   .trip_item {
     display: flex;
     flex-direction: column;
@@ -399,6 +452,19 @@ footer p a:hover {
 
   .trip_item img{
     width: 100%;
+
+  }
+
+  .trip_item .right .price {
+    margin-top: 16px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .trip_item .right .dark_button {
+    text-align: center;
+    width: 100%;
+    margin-top: 32px;
   }
 
   footer {
