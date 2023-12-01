@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Component | Collapsible/Accordion</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+  <section class="faq-section">
+    <h3>Frequently Asked Questions (FAQs)</h3>
+    <button class="accordion">How can I enroll in the free courses offered by BYU-Idaho on this platform?</button>
+    <div class="panel">
+      <p>Enrolling is simple. Visit our homepage, create an account or log in if you already have one, and browse the
+        list
+        of available courses. Once you find the course you're interested in, simply click "Enroll," and you'll be ready
+        to
+        start.</p>
+    </div>
+
+    <button class="accordion">How much time do I have to complete a free course?</button>
+    <div class="panel">
+      <p>There is no strict time limit to complete the free courses. You can progress at your own pace and access the
+        content at any time. However, we recommend following the suggested study plan to make the most of the learning
+        experience.</p>
+    </div>
+
+    <button class="accordion">Are there any technical requirements to access the courses?</button>
+    <div class="panel">
+      <p>You only need an internet connection and a device (such as a computer, tablet, or phone) to access the courses.
+        Ensure you have an up-to-date browser and access to an email account, as we use email for communication and
+        account recovery.</p>
+    </div>
+
+    <button class="accordion"> How can I get assistance if I encounter technical issues or have questions about course
+      content?</button>
+    <div class="panel">
+      <p>We provide technical support and academic assistance. For technical issues, you can contact our technical
+        support
+        team through the "Help" section in your profile. If you have questions about course content, you can participate
+        in discussion forums or contact the instructor through the platform.</p>
+    </div>
+
+  </section>
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>
