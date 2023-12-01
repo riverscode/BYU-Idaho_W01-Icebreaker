@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Nunito&family=Roboto:wght@500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+}
+
+:root {
+  --primary-color: #00b28f   ;
+  --secondary-color: #7de5e5 ;
+  --accent1-color: #9d96f6;
+  --accent2-color: #020816;
+
+  --heading-font: "Croissant One";
+  --paragraph-font: Nunito, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #fcfbfb;
+  font-family: var(--paragraph-font);
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+section h3{
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.styled-title{
+  font-family: var(--heading-font);
+}
+
+/* #################### */
+/* ###### HEADER ###### */
+/* #################### */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:24px 0;
+}
+
+header .logo {
+  width: 100px;
+  height: auto;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header nav a:hover {
+  color: var(--accent1-color);
+  text-align: center;
+
+}
+
+header .auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.signup-button{
+  background-color: var(--accent1-color);
+  border-radius: 5px;
+  padding: 2px 28px;
+  color: #fff;
+}
+
+/* ################## */
+/* ###### MAIN ###### */
+/* ################## */
+main{
+  padding-top: 80px;
+}
+
+.search-section{
+  margin-bottom: 40px;
+}
+
+.search-section .form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.form select{
+  padding: 6px 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+}
+
+.form input {
+  padding: 6px 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+}
+
+.form button {
+  background-color: var(--accent2-color);
+  border-radius: 5px;
+  padding: 6px 28px;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+}
+
+.articles-section{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+
+.articles-section .article-card{
+  display: flex;
+  gap: 30px;
+  padding: 16px;
+  margin-bottom: 40px;
+  border: #020816 3px solid;
+  border-radius: 5px;
+}
+
+.article-card .content .meta-information{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.meta-information .tags{
+  display: flex;
+  gap: 10px;
+  font-weight: 900;
+}
+
+.article-card h3{
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.article-card p{
+  margin-bottom: 20px;
+}
+
+.article-card .actions{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.article-card .more-button{
+  background-color: var(--accent2-color);
+  border-radius: 5px;
+  padding: 2px 28px;
+  color: #fff;
+
+}
+
+
+
+
+.subscribe-section {
+  margin-bottom: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+.subscribe-content{
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+}
+
+.subscribe-content h3{
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.subscribe-content p{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.subscribe-content form input{
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: #000 1px solid;
+  padding: 0px 10px;
+  margin-bottom: 20px;
+}
+
+
+/* #################### */
+/* ###### FOOTER ###### */
+/* #################### */
+
+footer{
+  background-color: var(--accent2-color);
+  padding: 40px 0px;
+  color: white;
+}
+
+footer a, footer p{
+  color: white;
+}
+
+footer .content-up{
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .content-down{
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: white 1px dashed;
+  margin-top: 20px;
+  padding-top: 6px;
+}
+
+footer .content-up nav {
+  display: flex;
+  gap: 20px;
+}
+
+footer .content-down .terms{
+  display: flex;
+  gap: 20px;
+}
